@@ -1,19 +1,404 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Min webbplats</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <h1>Hej världen!</h1>
-    <p>
-      Det här är din startsida. Redigera <code>index.html</code> och
-      <code>assets/css/style.css</code> för att börja bygga din webbplats.
-    </p>
-
-    <!-- Lägg dina bilder i mappen assets/images/ och visa dem så här:
-         <img src="assets/images/min-bild.jpg" alt="Beskrivning av bilden" /> -->
-  </body>
+<head>
+    <meta charset="utf-8">
+    <title>startsida</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!--testade att lägga in 'meta' med namn här men fick error så nu finns det ingen meta - bedömer att det inte är behövligt här(?)-->
+    <header>
+        <!--h1 pga huvudrubrik, hemsidans första fokus-->
+        <div class="topprub">
+        <h1>Sju <br> sorters <br> kakor</h1>
+        </div>
+        <figure class="toppbild">
+            <img src="assets/Bilder/lauren-gray-ingredients-unsplash-web.webp" width="700" height="394">
+            <figcaption>Bildkälla: <em>Unsplash</em></figcaption>
+        </figure>
+        <div class="introtxt">
+        <p>Att bjuda på sju sorters kakor är en klassisk svensk fikatradition och syftar på det minsta antalet kaksorter som etiketten tidigare föreskrev att kakfatet ska innehålla. Tanken är att erbjuda ett varierat urval av småkakor så att det finns något för olika smaker: spröda, mjuka, chokladiga, kryddiga och fruktiga kakor. Utöver småkakorna serveras även vetebröd och och tårta. Traditionen förknippas ofta med kafferep och högtider men passar lika bra till vardagsfika eller kalas och har funnits sedan 1800-talet.</p>
+        <p>På den här sidan finns recept på sju småkakor att prova på! </p>
+        </div>        
+        <!--slut på header pga här efter löper recepten - main-->
+    </header>
+    <!--main pga huvuddelen av hemsidan-->
+    <main>
+        <aside>
+            <!--snabbnavigering på webbsidan-->
+            <nav>
+                <!--strong (fet) pga utmärkande, uppmärksamhetskrävande-->
+                <!-- alla receptrubriker har märkts med ett id attribut och sedan länkats under nav med hashtag-->
+                <li><a href="#Drömmar">Drömmar</a></li>
+                <li><a href="#Finska-pinnar">Finska pinnar</a></li>
+                <li><a href="#Hallongrottor">Hallongrottor</a></li>
+                <li><a href="#Kolasnittar">Kolasnittar</a></li>
+                <li><a href="#Schackrutor">Schackrutor</a></li>
+                <li><a href="#Kokostosca">Kokostoscarutor med chokladbotten</a></li>
+                <li><a href="#Dumlekakor">Dumlekakor</a></li>
+            </nav>
+        </aside>
+        <!--div eller section eller article??? - FRÅGA BESVARAD-->
+        <!--article pga recept - till för spridning och fristående-->
+    <article>
+        <!--ny header med bild och text om recept pga inte huvuddelen-->
+        <header>
+            <!--figure för att hålla ihop bild med figcaption-->
+            <figure id="Drömmar">
+                <div class="image-container">
+                <!--originalbilden är 1000x562 pixlar (gäller alla bilder i filen). 70% av det är angett i width och height. För att skapa utrymme och "luft" mellan recepten.-->
+                <img class="img-full" src="assets/Bilder/drommar-pexels-nur-tok-1105432560-30900690-web.webp" alt="Färdiggräddade drömmar på en ugnsplåt i närbild" width="" height="">
+                </div>
+                <!--figcaption använt för att förmedla bildkälla i figure-->
+                <figcaption>
+                    Bildkälla: <em>Pexels</em>
+                </figcaption>
+            </figure>
+            <!--h2 pga nästa viktiga i orningen av fokus-->
+            <h2 class="h2v1">Drömmar</h2>
+            <p>Drömmar är mycket spröda småkakor med mild vaniljsmak som är lätta att baka. Hjorthornssalt gör att kakorna får sin karakteristiskt porösa och ljuvligt frasiga konsistens.</p>
+        </header>
+        <!--em pga tydlighet, så det ej förbises-->
+        <p><em>40-45 kakor</em></p>
+        <div class="row">
+            <div class="left-column">
+        <h3>Ingredienser</h3>
+        <!--ul pga ordningen spelar ingen större roll här - bara att man har allt-->
+        <ul>
+            <li>100 g smör</li>
+            <li>3 dl strösocker</li>
+            <li>1 dl rapsolja</li>
+            <li>2 tsk vaniljsocker</li>
+            <li>1 tsk hjorthornssalt</li>
+            <li>4 dl vetemjöl</li>
+        </ul>
+        </div>
+        <div class="right-column">
+        <h3>Gör såhär</h3>
+        <!--ol pga ordningen spelar kritisk roll för resultatet-->
+        <ol>
+            <li>Sätt ugnen på 150 °C.</li>
+            <li>Tillsätt oljan, lite i taget, under vispning.</li>
+            <li>Blanda vaniljsocker och hjorthornssalt med lite av mjölet och rör ned blandningen i smeten. Tillsätt sedan resten av mjölet.</li>
+            <li>Rulla små bollar av degen och lägg dem på plåtar med bakplåtspapper.</li>
+            <li>Grädda mitt i ugnen i cirka 15-20 minuter och låt kallna på plåten.</li>
+        </ol>
+        </div>
+        </div>
+        <!--/article lagd en tabb in för tydlighet vid stängda artiklar-->
+        </article>
+    <article>
+        <header>
+            <div class="image-container">
+            <figure  id="Finska-pinnar">
+                <!--här ligger de två bilder, dimensionerna width och height har därför halverats (1/2 av 700x394)-->
+                <img class="dbl-img" src="assets/Bilder/almonds-pexels-lorena-galeano-2236980-5254826-web.webp" alt="Liten poslinsskål med mandlar" width="" height="">
+                <figcaption>
+                  Bildkälla: <em>Pexels</em>
+                </figcaption>
+            </figure>
+            
+            <!--ny figure för bild 2-->
+            <figure >
+                <img class="dbl-img" src="assets/Bilder/Gemini-Generated-Image-finska-pinnar.webp" alt="Ett rött porslinsfat med schackrutor på en köksbänk i trä" width="" height="">
+                <figcaption>
+                    <!--förmedlar AI genererad bild. Alla bilder har dock bildkälla under, för kontinuitet-->
+                   Bildkälla: <em>Gemini AI</em>
+                </figcaption>
+                </div>
+            </figure>
+            </div>
+            </div>
+            <h2 class="h2v1">Finska pinnar</h2>
+            <p>Finska pinnar är spröda mördegskakor med mandel och pärlsocker på toppen. Trots namnet är de en välkänd klassiker på svenska kakfat.</p>
+        </header>
+        <p><em>ca 60 kakor</em></p>
+        <div class="row">
+            <div class="left-column">
+        <h3>Ingredienser</h3>
+        <ul>
+            <li>200 g smör</li>
+            <li>1 dl strösocker</li>
+            <li>4,5 dl vetemjöl</li>
+            <li>1 tsk vaniljsocker</li>
+            <li>1 dl mandelmjöl</li>
+            <li>1 äggvita</li>
+        </ul>
+        <!--h4 för subkategori till ingredienser-->
+        <h4>Garnering</h4>
+        <!--lista för kontinuitet, trots endast en listad sak-->
+        <ul>
+            <li>ca 1 dl hackad sötmandel och 2 msk pärlsocker</li>
+        </ul>
+         </div>
+         <div class="right-column">
+        <h3>Gör såhär</h3>
+        <ol>
+            <!--(kommentar som repeteras i varje artikel) ordnad lista pga kritiskt för rätt resultat att rätt ordning följs-->
+            <li>Sätt ugnen på 175 °C.</li>
+            <li>Blanda mandel, mjöl och socker och arbeta ihop med tärnat smör till en deg. Låt vila i kylskåp ca 30 minuter</li>
+            <li>Dela degen i 8 delar och rulla varje del till en 30 cm lång längd.</li>
+            <li>Lägg längderna på en plåt med bakplåtspapper.</li>
+            <li>Vispa upp äggvitan lätt och pensla längderna.</li>
+            <li>Strö över hackad mandel och pärlsocker och dela längderna i ca 4 cm långa bitar. Sära bitarna lite så att de inte fastnar i varandra.</li>
+            <li>Grädda mitt i ugnen i cirka 10-12 minuter.</li>
+        </ol>
+        </div>
+        </div>
+        </article>
+    <article>
+<!--inget nämnvärt här, valen till alla linjer kod som finns här har kommenterats tidigare-->
+        <header>
+            <figure id="Hallongrottor">
+                <div class="image-container">
+                <img class="img-full" src="assets/Bilder/Hallongrottor-chatgpt-bild-web.webp" alt="Hallongrottor på ett fat">
+                </div>
+                <figcaption>
+                    Bildkälla: <em>ChatGPT</em>
+                </figcaption>
+            </figure>
+            <h2 class="h2v1">Hallongrottor</h2>
+            <p>Hallongrottor är mördegskakor med en liten grop fylld med ljuvlig hallonsylt. De är både enkla att baka och uppskattade på kakfatet.</p>
+        </header>
+        <p><em>20-24 kakor</em></p>
+        <div class="row">
+            <div class="left-column">
+        <h3>Ingredienser</h3>
+        <ul>
+            <li>200 g smör eller margarin</li>
+            <li>1 dl strösocker</li>
+            <li>2 tsk vaniljsocker</li>
+            <li>4,5 dl vetemjöl</li>
+            <li>1 tsk bakpulver</li>
+            <li>1 dl fast hallonsylt</li>
+        </ul>
+        </div>
+        <div class="right-column">
+        <h3>Gör såhär</h3>
+        <ol>
+            <!--ordnad lista pga kritiskt för rätt resultat att rätt ordning följs-->
+            <li>Sätt ugnen på 200 °C.</li>
+            <li>Arbeta snabbt ihop smör, socker, vaniljsocker, vetemjöl och bakpulver till en deg. Gärna i matberedare.</li>
+            <li>Rulla degen till små bollar och lägg dem i små kakformar ca 5 cm i diameter.</li>
+            <li>Gör en grop i varje kaka med ett finger eller skaftet på en sked.</li>
+            <li>Fyll groparna med hallonsylt.</li>
+            <li>Grädda i cirka 12-15 minuter och låt sedan svalna på galler.</li>
+        </ol>
+        </div>
+        </div>
+        </article>
+    <article>
+<!--inget nämnvärt i denna artikel, allt som finns med har tidigare nämnts-->
+            <header>
+                <figure id="Kolasnittar">
+                    <div class="image-container">
+                    <img class="img-full" src="assets/Bilder/kolasnittar-chatgpt-bild-web.webp" alt="Kolasnittar på ett porslinsfat" width="700" height="394">
+                    </div>
+                    <figcaption>
+                        Bildkälla: <em>ChatGPT</em>
+                    </figcaption>
+                </figure>
+                <h2 class="h2v1">Kolasnittar</h2>
+                <p>Kolasnittar är avlånga lite sega småkakor med smak av sirap och vanilj. De skärs i sneda bitar direkt när de kommer ut ur ugnen.</p>            
+            </header>
+            <p><em>20 kakor</em></p>
+            <div class="row">
+             <div class="left-column">
+            <h3>Ingredienser</h3>
+            <ul>
+                <li>100 g smör</li>
+                <li>1 dl strösocker</li>
+                <li>2 msk mörk sirap</li>
+                <li>2,5 dl vetemjöl</li>
+                <li>1 tsk bakpulver</li>
+                <li>1 tsk vaniljsocker</li>
+            </ul>
+            </div>
+             <div class="right-column">
+            <h3>Gör såhär</h3>
+            <ol>
+                <!--ordnad lista pga kritiskt för rätt resultat att rätt ordning följs-->
+                <li>Sätt ugnen på 175 °C.</li>
+                <li>Rör smör, socker och sirap mjukt.</li>
+                <li>Blanda vetemjöl, bakpulver och vaniljsocker. Arbeta sedan ihop med smörsmeten till en deg.</li>
+                <li>Dela degen i två delar och rulla dem till längder ca 40 cm långa.</li>
+                <li>Lägg längderna på en plåt med bakpltåspapper och platta till dem.</li>
+                <li>Grädda mitt i ugnen cirka 12 minuter.</li>
+                <li>Låt kakorna svalna något och skär längderna i sneda bitar medan de fortfarande är varma.</li>
+            </ol>
+            </div>
+            </div>
+        </article>
+    <article>
+        <header>
+            <div class="image-container">
+            <figure id="Schackrutor">
+                <!--dubbelbild igen, därför mindre i skala-->
+                <img class="dbl-img" src="assets/Bilder/dark-dough-chess-pexels-nicole-michalou-6061579-web.webp" alt="" width="350" height="197">
+                
+                <figcaption>
+                    Bildkälla<em> Pexels</em>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="dbl-img" src="assets/Bilder/Gemini_Generated_Image_m49bx9m49bx9m49b-web.webp" alt="" width="350" height="197">
+                <figcaption>
+                    Bildkälla<em> Gemini AI</em>
+                </figcaption>
+            </figure>
+            </div>
+            <h2 class="h2v1">Schackrutor</h2>
+            <p>Schackrutor är klassiska småkakor med ett dekorativt rutmönster av ljus och chokladsmakande mördeg. Kakorna blir spröda och ser mycket läckra ut på kakfatet. De imponerar med sitt utseende men är väldigt enkla att baka.</p>            
+        </header>
+        <p><em>Ca 50 kakor</em></p>
+        <div class="row">
+        <div class="left-column">
+        <h3>Ingredienser</h3>
+        <ul>
+            <li>200 g osaltat smör</li>
+            <li>1 dl strösocker </li>
+            <li>4,5 dl vetemjöl</li>
+            <li><strong>Ljus deg:</strong> 2 tsk vaniljsocker</li>
+            <li><strong>Mörk deg:</strong> 2 msk kakao</li>        
+        </ul>
+        </div>
+        <div class="right-column">
+        <h3>Gör såhär</h3>
+        <ol>
+            <!--ordnad lista pga kritiskt för rätt resultat att rätt ordning följs-->
+            <li>Ta fram smöret så att det hinner bli rumsvarmt.</li>
+            <li>Vispa ihop smör och socker till en jämn smet.</li>
+            <li>Tillsätt vetemjöl, lite i taget, och fortsätt röra tills det blir stora smulor.</li>
+            <li>Dela degen i två lika stora delar.</li>
+            <li>Arbeta in kakaon i den ena delen och vaniljsocker i den andra så att du får en ljus och en mörk deg.</li>
+            <li>Dela degarna dem i två delar så du får två ljusa och två mörka delar.</li>
+            <li>Rulla ut till längder och tryck till dem mot bakbordet så längderna får platta kanter. Lägg dem tätt ihop, med två ovanpå de andra så de bildar ett litet schackmönster.</li>
+            <li>Låt vila i kylen 1-2 timmar.</li>
+            <li>Sätt ugnen på 200 °C.</li>
+            <li>Ta fram längden och skär ca 3-4 mm tjocka skivor.</li>
+            <li>Lägg kakorna på en plåt med bakplåtspapper och grädda mitt i ugnen i ca 8-10 minuter.</li>
+        </ol>
+        </div>
+        </div>
+        </article>
+    <article>
+        <header>
+            <div class="image-container">
+            <figure id="Kokostosca">
+                <img class="img-full" src="assets/Bilder/Choklad-och-kokosrutor-chatgpt-web.webp" alt="Choklad- och kokostoscarutor på ett grönt porslinsfat" width="700" height="394">
+                <figcaption>
+                    Bildkälla: <em>ChatGPT</em>
+                </figcaption>
+            </figure>
+            </div>
+            <h2 class="h2v2">Kokostoscarutor med chokladbotten</h2>
+            <p>Med en botten av kladdig och rik kladdkaka och ett täcke av seg kokostosca är detta en favorit i alla åldrar. En kaka som bakas på plåt.</p>            
+        </header>
+        <p><em>30-40 kakor</em></p>
+        <div class="row">
+            <div class="left-column">
+        <h3>Ingredienser</h3>
+        <!--h4 för subkategori till ingredienser-->
+        <strong>Kladdkaksbotten:</strong>
+        <ul>
+            <li>200 g smör</li>
+            <li>4 st ägg</li>
+            <li>5 dl (3 dl om du vill ta mindre socker) strösocker</li>
+            <li>2 tsk vaniljsocker</li>
+            <li>2 krm salt</li>
+            <li>1 dl kakao</li>
+            <li>3 dl (180 g) vetemjöl</li>
+        </ul>
+        <strong>Kokostosca:</strong>
+        <!--h4 för subkategori till ingredienser-->
+        <ul>
+            <li>200 g (ca 5,5 dl) kokosflingor</li>
+            <li>1 dl ljus sirap</li>
+            <li>2 dl (1 dl om du vill ta mindre socker) strösocker</li>
+            <li>1,5 dl vispgrädde</li>
+            <li>75 g smör</li>
+        </ul>
+        </div>
+        <div class="right-column">
+        <h3>Gör såhär</h3>
+        <ol>
+            <!--ordnad lista pga kritiskt för rätt resultat att rätt ordning följs-->
+            <li>Sätt ugnen på 200 °C.</li>
+            <li>Smält smöret på svag värme i en kastrull.</li>
+            <li>Klä en långpanna eller en ugnsform, ca 27x37 cm med bakplåtspapper.</li>
+            <li>Mät upp ägg och strösocker i en bunke - vispa till en ljus, pösig smet, använd gärna elvisp.</li>
+            <li>Tillsätt vaniljsocker, salt och kakao - vispa ihop till en jämn smet.</li>
+            <li>Tillsätt vetemjöl och det smälta smöret.
+                <!--break för enklare läsning-->
+                <br>Rör eller vispa snabbt ihop till en jämn smet (rör/vispa inte längre tid än att det är blandat).
+                <br>(Tänk på när du mäter upp vetemjöl att inte gräva med decilitermått i mjölpåsen för då packas mjölet och det blir för mycket. Häll istället upp mjölet eller väg det.)</li>
+                <li>Bred ut kakan i långpannan med bakplåtspapper.</li>
+                <li>Grädda mitt i ugnen i 200°C i ca 15 minuter. Kakan ska få lite färg.
+                    <br>(Observera att tiden kan behöva ökas om du använder en mindre form än jag respektive minskas om du använder en större form än jag. Kakan ska vara tillräckligt gräddad för att klara av att bära glasyren.)
+                    <br>Gör under tiden kokostoscaglasyren i en kastrull.</li>
+                    <li>Häll kokosflingor, sirap, strösocker, grädde och smör i en kastrull och sätt på plattan på medelvärme och rör om när smöret smälter så det blir en jämn smet.
+                        <br>Låt sedan koka upp och låt det sjuda ca 5 minuter.</li>
+                        <li>När kakan är klar och uttagen från ugnen, bred på kokostoscan och grädda ytterligare ca 10 minuter i ugnen tills kakan fått fin gyllenbrun färg.</li>
+                        <li>Låt kakan svalna. Skär sedan kakan i fyrkanter med en vass kniv.</li>
+                    </ol>
+                    </div>
+                    </div>
+                    <!--footer pga källhänvisning-->
+                    <footer>
+                        <!--em pga disclaimer och källa till receptet-->
+                        <p><em>Recept hämtat från recepten.se</em></p>
+                    </footer>
+        </article>
+    <article>
+        <header>
+            <div class="image-container">
+            <figure id="Dumlekakor">
+                <img class="img-full" src="assets/Bilder/dumlekakor-chatgpt-web.webp" alt="Dumlekakor på ett porslinsfat i vintagestil" width="700" height="394">
+                <figcaption>Bildkälla <em>ChatGPT</em></figcaption>
+            </figure>
+            </div>
+            <h2 class="h2v1">Dumlekakor</h2>
+            <p>Det här receptet ger goda, mjuksega dumlekakor som är enkla att baka. Med riktigt smör och seg Dumle görs en ljuvlig kaka.</p>            
+        </header>
+        <p><em>24 kakor</em></p>
+        <div class="row">
+        <div class="left-column">
+        <h3>Ingredienser</h3>
+        <ul>
+            <li>200 g smör</li>
+            <li>1 dl strösocker</li>
+            <li>1 tsk bakpulver</li>
+            <li>0,5 tsk salt</li>
+            <li>3 dl (180 g) vetemjöl</li>
+            <li>24 st dumlekolor</li>
+        </ul>
+        </div>
+        <div class="right-column">
+        <h3>Gör såhär</h3>
+        <ol>
+            <!--ordnad lista pga kritiskt för rätt resultat att rätt ordning följs-->
+            <li>Sätt ugnen på 175 °C</li>
+            <li>Ställ upp runda aluminiumformar på en plåt.</li>
+            <li>Mät upp smör och strösocker i en bunke. Låt stå framme i rumstemperatur en stund så att smöret blir mjukt.</li>
+            <li>Rör till en jämn smet. Det går bra att använda elvisp.</li>
+            <li>Tillsätt bakpulver och salt. Blanda till en jämn smet. (Använd gärna elvisp.)</li>
+            <li>Tillsätt vetemjöl. Blanda till en jämn kakdeg.</li>
+            <li>Dela upp degen i 24 st (om du gör en sats) lika stora delar och forma till kulor. Lägg dem i aluminiumformarna.</li>
+            <li>Tryck i en dumlekola i varje kaka.</li>
+            <li>Grädda mitt i ugnen i ca 10-12 min, det ska bubbla lite i dumlekolan.</li>
+        </ol>
+        </div>
+        </div>
+        <!--footer pga källhänvisning-->
+        <footer>
+        <!--em pga disclaimer och källa till receptet-->
+        <p><em>Recept hämtat från recepten.se</em></p>
+        </footer>
+        </article>
+    </main>
+<!--footer med skaparens namn, för det är bara en webbsida så webbplatslänkar kan inte läggas här och alternativet 'ingen footer' känns olämpligt-->
+<footer>
+    <p>Hemsida av Indra Arbring</p>
+</footer>
+</body>
 </html>

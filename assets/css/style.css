@@ -1,22 +1,185 @@
-body {
-  font-family:
-    system-ui,
-    -apple-system,
-    sans-serif;
-  max-width: 40rem;
-  margin: 4rem auto;
-  padding: 0 1rem;
-  line-height: 1.6;
-  color: #1a1a1a;
+
+main{
+     font-family: 'Franklin Gothic', Arial, sans-serif;
+    font-size: 18px;
+}
+body{
+    background-image: url(Bilder/gingham_pattern_yellow_background-magnific.webp);
+    height: fit-content;
+}
+*{
+    box-sizing: border-box;
+}
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 5rem;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+.h2v1{
+    font-size: 4rem;
+    font-weight: bold;
+    font-variant: small-caps;
+    position: absolute;
+    bottom: 2.2rem;
+    margin-left: 1rem;
+    background-color: #ffe68a49;
+    max-width: fit-content;
+}
+.h2v2{
+    font-size: 4rem;
+    font-weight: bold;
+    font-variant: small-caps;
+    position: absolute;
+    bottom: 9rem;
+    margin-left: 20px;
+    background-color: #ffe68a49;
+    max-width: fit-content;
+}
+h3{
+    font-size: 1.7rem;
+}
+h4{
+    font-size: 1.4rem;
+}
+header{
+    position: relative;
+    font-family: 'Franklin Gothic', Arial, sans-serif;
+    font-size: 18px;
+}
+img{
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgb(88, 72, 15);
+}
+figcaption{
+    font-size: 0.6rem;
+}
+figcaption > em{
+    font-size: 0.6rem;
 }
 
-h1 {
-  color: #2563eb;
+header > .image-container {
+    display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.image-container .img-full {
+     width: 100%;
+     height: 100%;
+    object-fit: fill;
 }
 
-code {
-  background: #f1f5f9;
-  padding: 0.1rem 0.3rem;
-  border-radius: 3px;
-  font-size: 0.95em;
+.image-container .dbl-img{
+    width: 100%;
+    height: fit-content;
+    object-fit: fill;
+}
+header > p{
+    clear: both;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+.toppbild{
+    display: inline-block;
+    margin-right: 10%;
+    text-align: right;   
+}
+.topprub{
+    float: left;
+    margin-left: 10%;
+}
+.introtxt{
+    clear: both;
+    margin-left: 10%;
+    margin-right: 15%;
+    font-size: 1.2rem;
+}
+
+article{
+   background-color: #fff0b6ca;
+   display: flex;
+   flex-direction: column;
+   height: fit-content;
+   width: 55%;
+   margin: 27px 20% 0 25%;
+   padding: 1rem;
+   
+    border:10px groove #e7b900;
+    border-radius: 1.2rem;
+    box-shadow: 2px 2px 5px rgb(69, 55, 4);
+   
+}
+li a {
+  display: block;
+  max-width: fit-content;
+}
+aside{
+    list-style-type: none;
+    position: sticky;
+    float: left;
+    margin-left: 10%;
+    top: 3.5rem;
+    background-color: #ff301d;
+    box-shadow: 2px 2px 5px rgb(86, 28, 7);
+    width: 15%;
+    padding: 10px;
+    
+    
+   
+   
+    
+    border-radius: 1.2rem;
+    border: 5px groove #ea1f00;
+
+}
+nav:first-child
+{
+    margin-top: 1rem;
+}
+
+a:link{
+    color: #fff0b6;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(255, 109, 47, 0.652);
+    box-shadow: 2px 2px 5px rgb(82, 57, 57);
+    margin-bottom: 0.8rem;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+a:visited{
+    color:#ffcc5d;
+}
+a:hover{
+    text-decoration: underline;
+    box-shadow: none;
+}
+
+.row{
+    display: flex; 
+}
+.left-column{
+  width: 50%;
+  margin: 0 0 0 1.5rem;
+  flex-direction: column;
+}
+.right-column{
+  width: 50%;
+  margin: 0 1.5rem 0 0;
+  flex-direction: column;
+}
+p{
+    margin-bottom: 1rem;
+}
+p + p{
+
+}
+li{
+    margin-bottom: 0.4rem;
+}
+footer{
+    font-size: 0.6rem;
 }
