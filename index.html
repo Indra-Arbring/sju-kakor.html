@@ -2,8 +2,9 @@
 <html lang="sv">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>startsida</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!--testade att lägga in 'meta' med namn här men fick error så nu finns det ingen meta - bedömer att det inte är behövligt här(?)-->
@@ -13,7 +14,7 @@
         <h1>Sju <br> sorters <br> kakor</h1>
         </div>
         <figure class="toppbild">
-            <img src="assets/Bilder/lauren-gray-ingredients-unsplash-web.webp" width="700" height="394">
+            <img src="assets/images/lauren-gray-ingredients-unsplash-web.webp" width="700" height="394">
             <figcaption>Bildkälla: <em>Unsplash</em></figcaption>
         </figure>
         <div class="introtxt">
@@ -40,14 +41,14 @@
         </aside>
         <!--div eller section eller article??? - FRÅGA BESVARAD-->
         <!--article pga recept - till för spridning och fristående-->
-    <article>
+    <article id="Drömmar">
         <!--ny header med bild och text om recept pga inte huvuddelen-->
         <header>
             <!--figure för att hålla ihop bild med figcaption-->
-            <figure id="Drömmar">
+            <figure>
                 <div class="image-container">
                 <!--originalbilden är 1000x562 pixlar (gäller alla bilder i filen). 70% av det är angett i width och height. För att skapa utrymme och "luft" mellan recepten.-->
-                <img class="img-full" src="assets/Bilder/drommar-pexels-nur-tok-1105432560-30900690-web.webp" alt="Färdiggräddade drömmar på en ugnsplåt i närbild" width="" height="">
+                <img class="img-full" src="assets/images/drommar-pexels-nur-tok-1105432560-30900690-web.webp" alt="Färdiggräddade drömmar på en ugnsplåt i närbild" width="" height="">
                 </div>
                 <!--figcaption använt för att förmedla bildkälla i figure-->
                 <figcaption>
@@ -87,12 +88,12 @@
         </div>
         <!--/article lagd en tabb in för tydlighet vid stängda artiklar-->
         </article>
-    <article>
+    <article id="Finska-pinnar">
         <header>
             <div class="image-container">
-            <figure  id="Finska-pinnar">
+            <figure>
                 <!--här ligger de två bilder, dimensionerna width och height har därför halverats (1/2 av 700x394)-->
-                <img class="dbl-img" src="assets/Bilder/almonds-pexels-lorena-galeano-2236980-5254826-web.webp" alt="Liten poslinsskål med mandlar" width="" height="">
+                <img class="dbl-img" src="assets/images/almonds-pexels-lorena-galeano-2236980-5254826-web.webp" alt="Liten poslinsskål med mandlar" width="" height="">
                 <figcaption>
                   Bildkälla: <em>Pexels</em>
                 </figcaption>
@@ -100,7 +101,7 @@
             
             <!--ny figure för bild 2-->
             <figure >
-                <img class="dbl-img" src="assets/Bilder/Gemini-Generated-Image-finska-pinnar.webp" alt="Ett rött porslinsfat med schackrutor på en köksbänk i trä" width="" height="">
+                <img class="dbl-img" src="assets/images/Gemini-Generated-Image-finska-pinnar.webp" alt="Ett rött porslinsfat med schackrutor på en köksbänk i trä" width="" height="">
                 <figcaption>
                     <!--förmedlar AI genererad bild. Alla bilder har dock bildkälla under, för kontinuitet-->
                    Bildkälla: <em>Gemini AI</em>
@@ -146,12 +147,12 @@
         </div>
         </div>
         </article>
-    <article>
+    <article id="Hallongrottor">
 <!--inget nämnvärt här, valen till alla linjer kod som finns här har kommenterats tidigare-->
         <header>
-            <figure id="Hallongrottor">
+            <figure>
                 <div class="image-container">
-                <img class="img-full" src="assets/Bilder/Hallongrottor-chatgpt-bild-web.webp" alt="Hallongrottor på ett fat">
+                <img class="img-full" src="assets/images/Hallongrottor-chatgpt-bild-web.webp" alt="Hallongrottor på ett fat">
                 </div>
                 <figcaption>
                     Bildkälla: <em>ChatGPT</em>
@@ -187,12 +188,12 @@
         </div>
         </div>
         </article>
-    <article>
+    <article id="Kolasnittar">
 <!--inget nämnvärt i denna artikel, allt som finns med har tidigare nämnts-->
             <header>
-                <figure id="Kolasnittar">
+                <figure>
                     <div class="image-container">
-                    <img class="img-full" src="assets/Bilder/kolasnittar-chatgpt-bild-web.webp" alt="Kolasnittar på ett porslinsfat" width="700" height="394">
+                    <img class="img-full" src="assets/images/kolasnittar-chatgpt-bild-web.webp" alt="Kolasnittar på ett porslinsfat" width="700" height="394">
                     </div>
                     <figcaption>
                         Bildkälla: <em>ChatGPT</em>
@@ -229,19 +230,19 @@
             </div>
             </div>
         </article>
-    <article>
+    <article id="Schackrutor">
         <header>
             <div class="image-container">
-            <figure id="Schackrutor">
+            <figure>
                 <!--dubbelbild igen, därför mindre i skala-->
-                <img class="dbl-img" src="assets/Bilder/dark-dough-chess-pexels-nicole-michalou-6061579-web.webp" alt="" width="350" height="197">
+                <img class="dbl-img" src="assets/images/dark-dough-chess-pexels-nicole-michalou-6061579-web.webp" alt="" width="350" height="197">
                 
                 <figcaption>
                     Bildkälla<em> Pexels</em>
                 </figcaption>
             </figure>
             <figure>
-                <img class="dbl-img" src="assets/Bilder/Gemini_Generated_Image_m49bx9m49bx9m49b-web.webp" alt="" width="350" height="197">
+                <img class="dbl-img" src="assets/images/Gemini_Generated_Image_m49bx9m49bx9m49b-web.webp" alt="" width="350" height="197">
                 <figcaption>
                     Bildkälla<em> Gemini AI</em>
                 </figcaption>
@@ -281,11 +282,11 @@
         </div>
         </div>
         </article>
-    <article>
+    <article id="Kokostosca">
         <header>
             <div class="image-container">
-            <figure id="Kokostosca">
-                <img class="img-full" src="assets/Bilder/Choklad-och-kokosrutor-chatgpt-web.webp" alt="Choklad- och kokostoscarutor på ett grönt porslinsfat" width="700" height="394">
+            <figure>
+                <img class="img-full" src="assets/images/Choklad-och-kokosrutor-chatgpt-web.webp" alt="Choklad- och kokostoscarutor på ett grönt porslinsfat" width="700" height="394">
                 <figcaption>
                     Bildkälla: <em>ChatGPT</em>
                 </figcaption>
@@ -349,11 +350,11 @@
                         <p><em>Recept hämtat från recepten.se</em></p>
                     </footer>
         </article>
-    <article>
+    <article id="Dumlekakor">
         <header>
             <div class="image-container">
-            <figure id="Dumlekakor">
-                <img class="img-full" src="assets/Bilder/dumlekakor-chatgpt-web.webp" alt="Dumlekakor på ett porslinsfat i vintagestil" width="700" height="394">
+            <figure>
+                <img class="img-full" src="assets/images/dumlekakor-chatgpt-web.webp" alt="Dumlekakor på ett porslinsfat i vintagestil" width="700" height="394">
                 <figcaption>Bildkälla <em>ChatGPT</em></figcaption>
             </figure>
             </div>
