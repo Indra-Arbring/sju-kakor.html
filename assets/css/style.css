@@ -1,11 +1,15 @@
 
+/*anger tysnittsstorlek 18px som standard istället för 16px - för ökad tillgänglighet/läsbarhet*/
+/*anger typsnittsfamilj med sans seriffer för texten på sidan*/
 main{
-     font-family: 'Franklin Gothic', Arial, sans-serif;
+    font-family: 'Franklin Gothic', Arial, sans-serif;
     font-size: 18px;
 }
+/*anger bakgrundsbild för hela sidan*/
 body{
     background-image: url(../images/gingham_pattern_yellow_background-magnific.webp);
 }
+/*gör att inget elements storlek förändras av kantlinje, marginal eller padding*/
 *{
     box-sizing: border-box;
 }
@@ -113,24 +117,15 @@ header > p{
     margin-right: 15%;
     font-size: 1.2rem;
 }
-
-article{
-   background-color: #fff0b6ca;
-   display: flex;
-   flex-direction: column;
-   height: fit-content;
-   width: 55%;
-   margin: 27px 20% 0 25%;
-   padding: 1rem;
-    border:10px groove #e7b900;
-    border-radius: 1.2rem;
-    box-shadow: 2px 2px 5px rgb(69, 55, 4); 
+/*gör så det skapas mellanrum mellan stycken*/
+/*endast texten längst upp påverkas av detta, och endast en rad, därav valet mellanrum istället för indrag*/
+p{
+    margin-bottom: 1rem;
 }
-
-li a {
-  display: block;
-  max-width: fit-content;
-}
+/*formger navigationsmenyn, färg, vidd, skugga, padding*/
+/*sticky gör att den hänger med när man scrollar*/
+/*float lägger den till vänster*/
+/*margin left flyttar den ut så den linjerar med innehållet över och hamnar intill 'article'*/
 aside{
     list-style-type: none;
     position: sticky;
@@ -141,20 +136,18 @@ aside{
     box-shadow: 2px 2px 5px rgb(86, 28, 7);
     width: 15%;
     padding: 10px;
-    
-    
-   
-   
-    
     border-radius: 1.2rem;
     border: 5px groove #ea1f00;
 
 }
+/*lägger marginal över första länken i nav*/
 nav:first-child
 {
     margin-top: 1rem;
 }
-
+/*lägger länkar i nav som block*/
+/*formger länkarna i nav*/
+/*adderar luft mellan länkarna*/
 a:link{
     color: #fff0b6;
     text-decoration: none;
@@ -164,35 +157,61 @@ a:link{
     margin-bottom: 0.8rem;
     border-radius: 6px;
     padding: 5px;
+    max-width: 100%;
 }
-
+/*ändrar nyans på besökta länkar*/
 a:visited{
     color:#ffcc5d;
 }
+/*tar bort boxens skugga vid hover*/
+/*adderar linje under länkar vid hover*/
 a:hover{
     text-decoration: underline;
     box-shadow: none;
 }
-
+/*formger article-elementet*/
+/*lägger innehållet i kolumn - så rubrikerna hamnar under varandra*/
+/*lägger till och formger border*/
+/*bestämmer att höjden inte ska vara större eller mindre än innehållet*/
+article{
+    background-color: #fff0b6ca;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 55%;
+    margin: 27px 20% 0 25%;
+    padding: 1rem;
+    border:10px groove #e7b900;
+    border-radius: 1.2rem;
+    box-shadow: 2px 2px 5px rgb(69, 55, 4); 
+}
+/*div som möjliggör att lägga innehållet under h3 i rad*/
 .row{
     display: flex; 
 }
+/*gör att innehållet under h3 läggs i kolumn*/
+/*formger vänstra kolumnen*/
+/*gör bredden till 50% av parent - 'row'*/
+/*vänstermarginal*/
 .left-column{
   width: 50%;
   margin: 0 0 0 1.5rem;
   flex-direction: column;
 }
+/*gör att innehållet under h3 läggs i kolumn*/
+/*formger högra kolumnen*/
+/*gör bredden till 50% av parent - 'row'*/
+/*högermarginal*/
 .right-column{
   width: 50%;
   margin: 0 1.5rem 0 0;
   flex-direction: column;
 }
-p{
-    margin-bottom: 1rem;
-}
+/*skapar mellanrum mellan listelement*/
 li{
     margin-bottom: 0.4rem;
 }
+/*minskar typsnittsstorleken i footer för att den ska uppfattas som mindre relevant*/
 footer{
     font-size: 0.6rem;
 }
