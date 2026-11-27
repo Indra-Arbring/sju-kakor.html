@@ -5,19 +5,36 @@ main{
 }
 body{
     background-image: url(../images/gingham_pattern_yellow_background-magnific.webp);
-    height: fit-content;
 }
 *{
     box-sizing: border-box;
 }
+/*serif används till rubriker för en mer varierad typografi*/
 h1, h2, h3, h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/*small caps för tydlighet*/
+/*5 rem för att balansera med bilden till höger*/ 
+/*förenklar läsbarhet och klargör vilken sida använderan befinner sig på*/
+/*lägger h1 till vänster en bit in på sidan*/
+/*10% vänstermarginal för att linjera  med innehåll under*/
 h1{
     font-size: 5rem;
     font-weight: bolder;
     font-variant: small-caps;
+    float: left;
+    margin-left: 10%;
 }
+/*möjliggör att h1 ligger bredvid bilden*/
+/*lägger texten om bildkälla under bildens högra hörn istället för vänster*/
+.toppbild{
+    display: inline-block;
+    margin-right: 10%;
+    text-align: right;   
+}
+
+/*h2 version 1 - fäst med absolute positionering så att rubriken ligger över bilden*/
+/*storlek mindre än h1 men fortfarande stor för tydlighet*/
 .h2v1{
     font-size: 4rem;
     font-weight: bold;
@@ -28,6 +45,8 @@ h1{
     background-color: #ffe68a49;
     max-width: fit-content;
 }
+/*h2 version 2 - används till recept för kokostosca*/
+/*rubriken ännu högre än h2v1, annars täcks kakan på bilden över*/
 .h2v2{
     font-size: 4rem;
     font-weight: bold;
@@ -38,60 +57,58 @@ h1{
     background-color: #ffe68a49;
     max-width: fit-content;
 }
+/*rubrikstorlek för Ingredienser och Gör såhär*/
 h3{
     font-size: 1.7rem;
 }
+/*rubrikstorlek för underkategorier*/
 h4{
     font-size: 1.4rem;
 }
+/*positionerad som relative för att h2 ska kunna ligga över bilden*/
 header{
     position: relative;
     font-family: 'Franklin Gothic', Arial, sans-serif;
     font-size: 18px;
 }
+/*border radius för runda hörn*/
+/*box shadow för liten skugga så bilden upplevs som placerad på 'kortet' som är receptet*/
 img{
     border-radius: 1rem;
     box-shadow: 2px 2px 5px rgb(88, 72, 15);
 }
+/*för att göra deklaration av bildkällan liten*/
 figcaption{
     font-size: 0.6rem;
 }
 figcaption > em{
     font-size: 0.6rem;
 }
-
-header > .image-container {
+/*bildbehållare som spänner sig över hela header*/
+/*gör att alla bilder kan ha samma relationella dimensioner till och placering inuti 'article' trots minskade skärmdimensioner*/
+/*flex för att bilderna ska ligga brevid varandra*/
+/*centrerade i radens mitt*/
+.image-container {
     display: flex;
   width: 100%;
+  height: 100%;
   justify-content: center;
 }
+/*placerar bilden i behållaren*/
+/*fill gör att alla bebhållare har samma dimensioner*/
 .image-container .img-full {
      width: 100%;
      height: 100%;
     object-fit: fill;
 }
-
-.image-container .dbl-img{
-    width: 100%;
-    height: fit-content;
-    object-fit: fill;
-}
+/*gör så texten i header har en marginal på båda sidor och spänner sig över hela vidden*/
 header > p{
     clear: both;
     margin: 0 1.5rem 0 1.5rem;
 }
-
-.toppbild{
-    display: inline-block;
-    margin-right: 10%;
-    text-align: right;   
-}
-.topprub{
-    float: left;
-    margin-left: 10%;
-}
+/*linjerar texten i headern under h1 med h1 och nav under till vänster*/
+/*lite ökad textstorlek för att fånga uppmärksamhet och minska antal ord på raden pga bred rad*/
 .introtxt{
-    clear: both;
     margin-left: 10%;
     margin-right: 15%;
     font-size: 1.2rem;
@@ -105,12 +122,11 @@ article{
    width: 55%;
    margin: 27px 20% 0 25%;
    padding: 1rem;
-   
     border:10px groove #e7b900;
     border-radius: 1.2rem;
-    box-shadow: 2px 2px 5px rgb(69, 55, 4);
-   
+    box-shadow: 2px 2px 5px rgb(69, 55, 4); 
 }
+
 li a {
   display: block;
   max-width: fit-content;
